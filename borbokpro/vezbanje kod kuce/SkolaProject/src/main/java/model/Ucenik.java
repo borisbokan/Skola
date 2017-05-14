@@ -127,6 +127,8 @@ public class Ucenik {
         this.skola = skola;
     }
 
-    
+    public String toString(){
+        return "Ucenik: " + id + " - " + prezime + ", " + ime + " - maBr:" +  maticniBroj + ", JMBG: " + jmbg;
+    }
 
 }

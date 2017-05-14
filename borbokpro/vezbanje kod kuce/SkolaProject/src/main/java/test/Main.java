@@ -59,15 +59,16 @@ public class Main {
         uc1.setSkola(skola);
         uc1.setRazred(r5_1);
         uc1.setStaresina(staresina1);
+
         Ucenik uc2 = new Ucenik(1, "Katic", "Jovanka", "145342324", "163434675634", null, "Marko", "Jelena");
         uc2.setSkola(skola);
         uc2.setRazred(r5_1);
         uc2.setStaresina(staresina1);
 
-        Ucenik uc3 = new Ucenik(2, "Marijanovic", "Dragana", "24342333", "1344546354643", null, "Marko", null);
-        uc1.setSkola(skola);
-        uc1.setRazred(r5_1);
-        uc1.setStaresina(staresina1);
+        Ucenik uc3 = new Ucenik(2, "Gaspić", "Milomir", "24342333", "134346354643", null, "Marko", null);
+        uc3.setSkola(skola);
+        uc3.setRazred(r5_1);
+        uc3.setStaresina(staresina1);
 
 
         //6-1    ---------------------------------------------
@@ -118,5 +119,36 @@ public class Main {
         uc12.setSkola(skola);
         uc12.setRazred(r8_1);
         uc12.setStaresina(staresina4);
+
+
+        //povezivanje ucenika sa razredom
+        r5_1.addUcenici(uc1);
+        r5_1.addUcenici(uc2);
+        r5_1.addUcenici(uc3);
+
+
+        r6_1.addUcenici(uc4);
+        r6_1.addUcenici(uc5);
+        r6_1.addUcenici(uc6);
+
+        //povezivanje ucenika sa razredom
+        r7_1.addUcenici(uc7);
+        r7_1.addUcenici(uc8);
+        r7_1.addUcenici(uc9);
+
+        //povezivanje ucenika sa razredom
+        r8_1.addUcenici(uc10);
+        r8_1.addUcenici(uc11);
+        r8_1.addUcenici(uc12);
+
+        //Prikaz
+
+        for (Ucenik stavka : r5_1.getUcenici() ) {
+            System.out.println(stavka.getPrezime() + ", " + stavka.getIme() +  " Raz: " + stavka.getRazred().getRazred() + "/" + stavka.getRazred().getOdeljenje() + "Staresina: (" + stavka.getStaresina().getPrezime() + ", " + stavka.getStaresina().getIme() + ") ");
+        }
+
     }
+
+
+
 }
