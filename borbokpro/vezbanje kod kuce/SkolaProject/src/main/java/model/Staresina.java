@@ -67,4 +67,6 @@ public class Staresina{
     public void setPredmet(Predmet predmet) {
         this.predmet = predmet;
     }
+
+    
 }

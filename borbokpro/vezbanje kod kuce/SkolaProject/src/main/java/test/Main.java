@@ -24,6 +24,7 @@ public class Main {
 
 
         Predmet matematika = new Predmet(0, "Matematika");
+        matematika.setTipOcenjivanja(Predmet.TIPOCENJIVANJA_NUM);
         Predmet ruski = new Predmet(1, "Ruski");
         Predmet biologija = new Predmet(2, "Bioligija");
 
@@ -141,11 +142,46 @@ public class Main {
         r8_1.addUcenici(uc11);
         r8_1.addUcenici(uc12);
 
-        //Prikaz
 
+        Razred[] razredi={r5_1,r6_1,r7_1,r8_1};
+
+
+        for (Razred razred : razredi) {
+            for (Ucenik ucenik : razred.getUcenici()) {
+                if(ucenik.getIme().contentEquals("Filip")){
+                    System.out.println("Ucenik pronadjen u " + ucenik.getRazred().getRazred() + "/" + ucenik.getRazred().getOdeljenje());
+                }
+            }
+        }
+        System.out.println();
+
+
+        //Prikaz
+        System.out.println("Ucenici 5-1\n--------------------------------");
         for (Ucenik stavka : r5_1.getUcenici() ) {
             System.out.println(stavka.getPrezime() + ", " + stavka.getIme() +  " Raz: " + stavka.getRazred().getRazred() + "/" + stavka.getRazred().getOdeljenje() + "Staresina: (" + stavka.getStaresina().getPrezime() + ", " + stavka.getStaresina().getIme() + ") ");
         }
+        System.out.println();
+
+        System.out.println("Ucenici 6-1\n--------------------------------");
+        for (Ucenik stavka : r6_1.getUcenici() ) {
+            System.out.println(stavka.getPrezime() + ", " + stavka.getIme() +  " Raz: " + stavka.getRazred().getRazred() + "/" + stavka.getRazred().getOdeljenje() + "Staresina: (" + stavka.getStaresina().getPrezime() + ", " + stavka.getStaresina().getIme() + ") ");
+        }
+        System.out.println();
+
+
+
+        System.out.println("Ucenici 7-1\n--------------------------------");
+        for (Ucenik stavka : r7_1.getUcenici() ) {
+            System.out.println(stavka.getPrezime() + ", " + stavka.getIme() +  " Raz: " + stavka.getRazred().getRazred() + "/" + stavka.getRazred().getOdeljenje() + "Staresina: (" + stavka.getStaresina().getPrezime() + ", " + stavka.getStaresina().getIme() + ") ");
+        }
+        System.out.println();
+
+        System.out.println("Ucenici 8-1\n--------------------------------");
+        for (Ucenik stavka : r8_1.getUcenici() ) {
+            System.out.println(stavka.getPrezime() + ", " + stavka.getIme() +  " Raz: " + stavka.getRazred().getRazred() + "/" + stavka.getRazred().getOdeljenje() + "Staresina: (" + stavka.getStaresina().getPrezime() + ", " + stavka.getStaresina().getIme() + ") ");
+        }
+        System.out.println();
 
     }
 
