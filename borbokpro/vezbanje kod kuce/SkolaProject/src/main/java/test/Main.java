@@ -24,9 +24,13 @@ public class Main {
 
 
         Predmet matematika = new Predmet(0, "Matematika");
-        matematika.setTipOcenjivanja(Predmet.TIPOCENJIVANJA_NUM);
         Predmet ruski = new Predmet(1, "Ruski");
         Predmet biologija = new Predmet(2, "Bioligija");
+        Predmet veronauka=new Predmet(3,"Veronauka");
+        veronauka.setTipOcenjivanja(Predmet.TIPOCENJIVANJA_VERONAUKA);
+        veronauka.setUlaziUpresek(false);
+        Predmet srpski=new Predmet(4,"Srpski jezik");
+        
 
 
         Staresina staresina1 = new Staresina(0, "Markovic", "Predrag");
@@ -43,7 +47,7 @@ public class Main {
         staresina3.setRazred(r7_1);
 
 
-        Staresina staresina4 = new Staresina(3, "Balj", "Jelena");
+        Staresina staresina4 = new Staresina(3, "Kuzman", "Marijana");
         staresina4.setRazred(r8_1);
         staresina4.setPredmet(biologija);
 
@@ -142,7 +146,31 @@ public class Main {
         r8_1.addUcenici(uc11);
         r8_1.addUcenici(uc12);
 
+        //Ocenjivanje  ucenika 1
+        Ocena oc1=new Ocena(0,4f,matematika,uc1);
+        Ocena oc2=new Ocena(1,3f,srpski,uc1);
+        Ocena oc3=new Ocena(2,4f,ruski,uc1);
+        Ocena oc4=new Ocena(3,5f,veronauka,uc1);
+        uc1.addOcena(oc1);
+        uc1.addOcena(oc2);
+        uc1.addOcena(oc3);
+        uc1.addOcena(oc4);
 
+        //Ocenjivanje  ucenika 5
+        Ocena oc5=new Ocena(4,5f,matematika,uc5);
+        Ocena oc6=new Ocena(5,4f,srpski,uc5);
+        Ocena oc7=new Ocena(6,4f,ruski,uc5);
+        Ocena oc8=new Ocena(7,2f,veronauka,uc5);
+        uc5.addOcena(oc5);
+        uc5.addOcena(oc6);
+        uc5.addOcena(oc7);
+        uc5.addOcena(oc8);
+
+        
+
+
+
+        //Sva  odeljenja od 5/1 do 8/1.
         Razred[] razredi={r5_1,r6_1,r7_1,r8_1};
 
 
@@ -183,8 +211,32 @@ public class Main {
         }
         System.out.println();
 
+
+
+        //Listanje ocena
+        for (Razred razred : razredi) {
+            System.out.println("------------------------------------------");
+            System.out.println("Razred: " + razred.getRazred() + "/" + razred.getOdeljenje());
+            System.out.println("------------------------------------------");
+            for (Ucenik ucenik : razred.getUcenici()) {
+                System.out.println("Lista ocena za ucenik: " + ucenik.getPrezime() + ", " + ucenik.getIme());
+                if(ucenik.getOcene().size()<1){
+                    System.out.println("Ucenik nema ni jednu ocenu");
+                }else {
+                    for (Ocena ocena : ucenik.getOcene()) {
+                        if(ocena.getPredmet().getTipOcenjivanja()==Predmet.TIPOCENJIVANJA_VERONAUKA){
+                            System.out.println(ocena.getId() + " " + ocena.getPredmet() + " > "  + ocena.getOcenaVeronauke(ocena.getPredmet()));
+                        }else{
+                            System.out.println(ocena.getId() + " " + ocena.getPredmet() + " > "  + ocena.getOcena());
+                        }
+
+                    }
+                }
+
+            }
+        }
+
+
     }
-
-
 
 }

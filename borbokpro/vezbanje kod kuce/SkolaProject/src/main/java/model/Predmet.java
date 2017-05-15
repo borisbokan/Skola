@@ -10,12 +10,13 @@ public class Predmet {
 
     public static final int TIPOCENJIVANJA_NUM=0;
     public static final int TIPOCENJIVANJA_OPISNO=1;
-    public static final int TIPOCENJIVANJA_SLOVNO=3;
-
+    public static final int TIPOCENJIVANJA_ABECD=3;
+    public static final int TIPOCENJIVANJA_VERONAUKA=4;
 
     private int id;
     private String naziv;
     private ArrayList<Staresina> staresine;
+    
     private boolean ulaziUpresek=true;
     private int tipOcenjivanja=0;
 
@@ -68,6 +69,7 @@ public class Predmet {
     }
 
     /**
+     * Predmet ulazi u prosek. Proverava se u kalkulaciji da li je predmet markiran
      * Default true
      * @param ulaziUpresek
      */

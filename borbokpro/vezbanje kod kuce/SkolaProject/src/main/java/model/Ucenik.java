@@ -1,6 +1,7 @@
 package model;
 
 import java.sql.Date;
+import java.util.ArrayList;
 
 /**
  * Created by borcha on 14.05.17..
@@ -16,14 +17,13 @@ public class Ucenik {
     private Date datumRodjenja;
     private String imeOca;
     private String imeMajke;
-
     private Razred razred;
     private Staresina staresina;
     private Skola skola;
-
+    private ArrayList<Ocena> ocene;
 
     public Ucenik(){
-
+        ocene=new ArrayList<>();
     }
 
     public Ucenik(int _id,String _prezime,String _ime,String _maticniBroj,String _jmbg,Date _datumRodjenja,String _imeOca,String _imeMajke){
@@ -36,6 +36,7 @@ public class Ucenik {
         imeOca=_imeOca;
         imeMajke=_imeMajke;
 
+        ocene=new ArrayList<>();
     }
 
 
@@ -127,8 +128,21 @@ public class Ucenik {
         this.skola = skola;
     }
 
+
+    public ArrayList<Ocena> getOcene() {
+        return ocene;
+    }
+
+    public void setOcene(ArrayList<Ocena> ocene) {
+        this.ocene = ocene;
+    }
+
+    public void addOcena(Ocena _ocena) {
+        this.ocene.add(_ocena);
+    }
+
     public String toString(){
-        return "Ucenik: " + id + " - " + prezime + ", " + ime + " - maBr:" +  maticniBroj + ", JMBG: " + jmbg;
+        return "Ucenik( " + id + " - " + prezime + ", " + ime + " - maBr:" +  maticniBroj + ", JMBG: " + jmbg + ")";
     }
 
 }
