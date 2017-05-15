@@ -1,6 +1,8 @@
 package test;
 
 import model.*;
+import pomocne.Prosek;
+
 import java.util.Date;
 
 import static jdk.nashorn.internal.runtime.regexp.joni.Syntax.Java;
@@ -212,13 +214,17 @@ public class Main {
         System.out.println();
 
 
-
+        
         //Listanje ocena
         for (Razred razred : razredi) {
             System.out.println("------------------------------------------");
             System.out.println("Razred: " + razred.getRazred() + "/" + razred.getOdeljenje());
             System.out.println("------------------------------------------");
+
+
             for (Ucenik ucenik : razred.getUcenici()) {
+                
+
                 System.out.println("Lista ocena za ucenik: " + ucenik.getPrezime() + ", " + ucenik.getIme());
                 if(ucenik.getOcene().size()<1){
                     System.out.println("Ucenik nema ni jednu ocenu");
@@ -233,7 +239,14 @@ public class Main {
                     }
                 }
 
+                System.out.println("=====================");
+                //Prosek ucenika
+                Prosek prosek = new Prosek(ucenik.getOcene());
+                System.out.printf("Prosek :: %.2f ::\n",prosek.getProsek());
+                System.out.println("=====================");
             }
+
+
         }
 
 

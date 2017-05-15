@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7fe37afa-d046-49cb-9a46-df69e7629a97" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/model/Ocena.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pomocne/Prosek.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/model/Predmet.java" afterPath="$PROJECT_DIR$/src/main/java/model/Predmet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/model/Ucenik.java" afterPath="$PROJECT_DIR$/src/main/java/model/Ucenik.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/test/Main.java" afterPath="$PROJECT_DIR$/src/main/java/test/Main.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -84,7 +82,7 @@
       <file leaf-file-name="Ucenik.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/model/Ucenik.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
+            <state relative-caret-position="1238">
               <caret line="140" column="31" lean-forward="false" selection-start-line="140" selection-start-column="31" selection-end-line="140" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -103,11 +101,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/test/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-67">
-              <caret line="165" column="53" lean-forward="true" selection-start-line="165" selection-start-column="53" selection-end-line="165" selection-end-column="53" />
+            <state relative-caret-position="4299">
+              <caret line="244" column="54" lean-forward="false" selection-start-line="244" selection-start-column="54" selection-end-line="244" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -168,10 +166,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Ocena.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Ocena.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/model/Ocena.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
+            <state relative-caret-position="1017">
               <caret line="61" column="53" lean-forward="true" selection-start-line="61" selection-start-column="18" selection-end-line="61" selection-end-column="53" />
               <folding>
                 <element signature="method#Ocena#1;class#Ocena#0" expanded="true" />
@@ -193,6 +191,22 @@
                 <element signature="e#1071#1072#0" expanded="true" />
                 <element signature="method#getOcenaVeronauke#0;class#Ocena#0" expanded="true" />
                 <element signature="method#toString#0;class#Ocena#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Prosek.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pomocne/Prosek.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="43" column="23" lean-forward="false" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#Prosek#0;class#Prosek#0" expanded="true" />
+                <element signature="method#racunajProsek#0;class#Prosek#0" expanded="true" />
+                <element signature="e#1158#1159#0" expanded="true" />
+                <element signature="e#1210#1211#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -566,8 +580,9 @@
         <option value="$PROJECT_DIR$/src/main/java/model/Staresina.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/Ucenik.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/Predmet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/test/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/Ocena.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pomocne/Prosek.java" />
+        <option value="$PROJECT_DIR$/src/main/java/test/Main.java" />
       </list>
     </option>
   </component>
@@ -1099,7 +1114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1494791280925</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Dodata nova klasa Ocena i povezana sa ucenicima 1:N (objektno).&#10;U klasi dodata i pomocna metoda getOcenaVeronauke(Predmet _predmet) koja konvertuje numericku ocenu u opisnu ocenu veronauke (Istice se i dobar)">
+      <created>1494876857876</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1494876857876</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1125,10 +1147,10 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30307692" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18764846" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19794141" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22882026" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="DBOutput" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32923076" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1152,7 +1174,8 @@
     <MESSAGE value="pocetak projekta skola (Vezbanje )" />
     <MESSAGE value="pocetak projekta skola (Vezbanje ) c" />
     <MESSAGE value="Uradjen prikaz ucenika sa osnovnim podacima u Main klasi...na dnu main klase!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Uradjen prikaz ucenika sa osnovnim podacima u Main klasi...na dnu main klase!" />
+    <MESSAGE value="Dodata nova klasa Ocena i povezana sa ucenicima 1:N (objektno).&#10;U klasi dodata i pomocna metoda getOcenaVeronauke(Predmet _predmet) koja konvertuje numericku ocenu u opisnu ocenu veronauke (Istice se i dobar)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dodata nova klasa Ocena i povezana sa ucenicima 1:N (objektno).&#10;U klasi dodata i pomocna metoda getOcenaVeronauke(Predmet _predmet) koja konvertuje numericku ocenu u opisnu ocenu veronauke (Istice se i dobar)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1960,7 +1983,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/Ucenik.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
+        <state relative-caret-position="1238">
           <caret line="140" column="31" lean-forward="false" selection-start-line="140" selection-start-column="31" selection-end-line="140" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1978,19 +2001,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/test/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-67">
-          <caret line="165" column="53" lean-forward="true" selection-start-line="165" selection-start-column="53" selection-end-line="165" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/Ocena.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
+        <state relative-caret-position="1017">
           <caret line="61" column="53" lean-forward="true" selection-start-line="61" selection-start-column="18" selection-end-line="61" selection-end-column="53" />
           <folding>
             <element signature="method#Ocena#1;class#Ocena#0" expanded="true" />
@@ -2012,6 +2025,30 @@
             <element signature="e#1071#1072#0" expanded="true" />
             <element signature="method#getOcenaVeronauke#0;class#Ocena#0" expanded="true" />
             <element signature="method#toString#0;class#Ocena#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pomocne/Prosek.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="43" column="23" lean-forward="false" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Prosek#0;class#Prosek#0" expanded="true" />
+            <element signature="method#racunajProsek#0;class#Prosek#0" expanded="true" />
+            <element signature="e#1158#1159#0" expanded="true" />
+            <element signature="e#1210#1211#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/test/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4299">
+          <caret line="244" column="54" lean-forward="false" selection-start-line="244" selection-start-column="54" selection-end-line="244" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
