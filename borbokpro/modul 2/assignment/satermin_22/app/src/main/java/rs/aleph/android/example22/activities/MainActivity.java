@@ -154,6 +154,8 @@ public class MainActivity extends AppCompatActivity implements OnProductSelected
         switch (item.getItemId()) {
             case R.id.action_refresh:
                 Toast.makeText(MainActivity.this, "Sinhronizacija dugo traje koristiti servis. dobro :)",Toast.LENGTH_SHORT).show();
+
+
                 Intent intent = new Intent(MainActivity.this, SimpleService.class);
                 startService(intent);
                 break;
