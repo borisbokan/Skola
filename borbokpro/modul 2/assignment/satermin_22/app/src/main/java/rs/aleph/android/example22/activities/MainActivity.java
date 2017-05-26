@@ -1,6 +1,8 @@
 package rs.aleph.android.example22.activities;
 
 import android.app.FragmentTransaction;
+import android.app.Notification;
+import android.app.NotificationManager;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
@@ -24,6 +26,7 @@ import rs.aleph.android.example22.R;
 import rs.aleph.android.example22.adapters.DrawerListAdapter;
 import rs.aleph.android.example22.async.SimpleService;
 import rs.aleph.android.example22.dialogs.AboutDialog;
+import rs.aleph.android.example22.dialogs.Obavestenja;
 import rs.aleph.android.example22.fragments.DetailFragment;
 import rs.aleph.android.example22.fragments.ListFragment;
 import rs.aleph.android.example22.fragments.ListFragment.OnProductSelectedListener;
@@ -158,6 +161,8 @@ public class MainActivity extends AppCompatActivity implements OnProductSelected
 
                 Intent intent = new Intent(MainActivity.this, SimpleService.class);
                 startService(intent);
+
+
                 break;
             case R.id.action_add:
                 try {
@@ -256,5 +261,6 @@ public class MainActivity extends AppCompatActivity implements OnProductSelected
     }
 
 }
+
 
 

@@ -1,10 +1,12 @@
 package rs.aleph.android.example22.async;
 
+import android.app.Notification;
+import android.app.NotificationManager;
 import android.app.Service;
 import android.content.Intent;
 import android.os.IBinder;
-import android.support.annotation.Nullable;
 
+import rs.aleph.android.example22.dialogs.Obavestenja;
 import rs.aleph.android.example22.tools.ReviewerTools;
 
 /**
@@ -12,7 +14,7 @@ import rs.aleph.android.example22.tools.ReviewerTools;
  */
 public class SimpleService extends Service{
 
-    @Nullable
+
     @Override
     public IBinder onBind(Intent intent) {
         return null;
@@ -36,9 +38,14 @@ public class SimpleService extends Service{
          * Primer poziva asinhronog zadatka ako ima veze ka mrezi
          * npr. sinhronizacija mail-ova fotografija, muzike dokumenata isl.
          * */
-        if(status == ReviewerTools.TYPE_WIFI){
-            new SimpleSyncTask(getApplicationContext()).execute();
-        }
+        //if(status == ReviewerTools.TYPE_WIFI){
+            //new SimpleSyncTask(getApplicationContext()).execute();
+
+
+        //}
+
+        kreirajObavestenje(ReviewerTools.getConnectionType(status));
+
 
         /**
          * Zaustaviti servis nakon obavljenog pokretanja asinhronog zadatka.
@@ -53,4 +60,15 @@ public class SimpleService extends Service{
          * */
         return START_NOT_STICKY;
     }
+
+    public  void kreirajObavestenje(String _tipKonekcije) {
+
+        Notification obavestenje=new Obavestenja(this,"Tip povezivanja",_tipKonekcije).build();
+        NotificationManager notificationManager =(NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+
+        obavestenje.flags |=Notification.FLAG_AUTO_CANCEL;
+
+        notificationManager.notify(0, obavestenje);
+    }
+
 }

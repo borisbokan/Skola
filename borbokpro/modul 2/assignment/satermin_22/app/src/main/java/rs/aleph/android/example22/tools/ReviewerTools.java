@@ -29,12 +29,15 @@ public class ReviewerTools {
 
     public static String getConnectionType(Integer type){
         switch (type){
+
+            case 0:
+                return "Niste povezani na internet!";//Nije bilo dodao sam...
             case 1:
                 return "WIFI";
             case 2:
                 return "Mobilni internet";
             default:
-                return "";
+                return "Greska!";
         }
     }
 }
