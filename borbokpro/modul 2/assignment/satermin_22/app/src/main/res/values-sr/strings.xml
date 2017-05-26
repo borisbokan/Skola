@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Погледи</string>
+
+    <string name="activity_main_name">Главна активност</string>
+    <string name="activity_main_toolbar_title">Главна активност</string>
+
+    <string name="activity_settings_name">Подешавања</string>
+
+    <string name="fragment_detail_buy">Купи</string>
+    <string name="fragment_detal_action_refresh">Освежи</string>
+    <string name="fragment_detal_action_add">Додај</string>
+
+    <string name="notification_title">Производ наручен</string>
+    <string name="notification_text">Изабрани производ је наручен и биће испоручен у следећих недељу дана</string>
+
+    <string name="dialog_about_title">О апликацији</string>
+    <string name="dialog_about_message">Ово је Example18 апликација која демонстрира како се користе toast поруке, обавештења, дијалози, подешавања, линија алатики и фиока за навикацију</string>
+    <string name="dialog_about_yes">У реду</string>
+    <string name="dialog_about_no">Одустани</string>
+
+    <string name="pref_sync">pref_sync</string>
+    <string name="pref_sync_title">Омогући синхронизацију</string>
+    <string name="pref_sync_summ">Омогући да апликација аутоматски синхронизује податке ако је Wi-fi мрежа доступна</string>
+    <string name="pref_syncConnectionType">Интервал синхронизације</string>
+    <string name="pref_sync_list">pref_sync_list</string>
+
+    <string name="drawer_open">Отвори фиоку за навигацију</string>
+    <string name="drawer_close">Затвори фиоку за навигацију</string>
+    <string name="drawer_home">Почетак</string>
+    <string name="drawer_home_long">Прикажи све производе</string>
+    <string name="drawer_settings">Подешавања</string>
+    <string name="drawer_Settings_long">Промени подешавања апликације</string>
+    <string name="drawer_about">О апликацији</string>
+    <string name="drawer_about_long">О апликацији</string>
+
+</resources>
